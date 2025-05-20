@@ -1,12 +1,32 @@
 import { P } from '../../components/Paragrafo/styles'
+import Projeto from '../../components/Projeto'
 import Titulo from '../../components/Titulo'
+
+import { Lista } from './styles'
 
 const Projetos = () => (
   <section>
     <Titulo fontSize={1.2}>Projetos</Titulo>
-    <P tipo="secundario">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    </P>
+    <Lista>
+      <li>
+        <Projeto></Projeto>
+      </li>
+      <li>
+        <Projeto></Projeto>
+      </li>
+      <li>
+        <Projeto></Projeto>
+      </li>
+      <li>
+        <Projeto></Projeto>
+      </li>
+      <li>
+        <Projeto></Projeto>
+      </li>
+      <li>
+        <Projeto></Projeto>
+      </li>
+    </Lista>
   </section>
 )
 
