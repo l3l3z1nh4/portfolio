@@ -10,8 +10,10 @@ const EstiloGlobal = createGlobalStyle`
 
 body{
   padding-top: 70px;
+  padding-bottom: 70px;
   @media (max-width: 768px) {
-    padding-top: 23px;
+    padding-top: 40px;
+    padding-bottom: 50px;
   }
   }
   }

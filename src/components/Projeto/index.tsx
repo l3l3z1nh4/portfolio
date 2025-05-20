@@ -8,6 +8,7 @@ import Titulo from '../Titulo'
 const Card = styled.div`
   border: 1px solid rgb(131, 98, 98);
   padding: 16px;
+  border-radius: 4px;
 `
 const LinkBotao = styled.a`
   color: #fff;
@@ -17,6 +18,7 @@ const LinkBotao = styled.a`
   padding: 8px;
   text-decoration: none;
   cursor: pointer;
+  border-radius: 4px;
 `
 
 const Projeto = () => (
