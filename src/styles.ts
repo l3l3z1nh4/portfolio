@@ -7,6 +7,7 @@ const EstiloGlobal = createGlobalStyle`
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
   list-style: none;
+  background-color: ${(props) => props.theme.corFundo};
 
 body{
   padding-top: 70px;
