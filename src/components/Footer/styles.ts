@@ -33,7 +33,7 @@ export const Email = styled.div`
   width: 100%;
   gap: 0.5em;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 0.8em;
 `
 export const SocialContent = styled.div`
   background-color: ${cores.vermelho}; 

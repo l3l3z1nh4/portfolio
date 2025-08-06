@@ -11,14 +11,14 @@ import {
 export function Footer() {
   return (
     <>
-      <FooterStyled> {/* Este é o pai que agora será flex */}
-        <EmailContent> {/* Este será o primeiro item flex */}
+      <FooterStyled> 
+        <EmailContent> 
           <Email>
             <p>EMAIL:</p>
             <p>LETICIA.FRONTDEV@GMAIL.COM</p>
           </Email>
         </EmailContent>
-        <SocialContent> {/* Este será o segundo item flex */}
+        <SocialContent> 
           <Social>
             <a target="blank" href="https://github.com/l3l3z1nh4">
               <img src="src/assets/git_hub_icon.png" alt="github" />
