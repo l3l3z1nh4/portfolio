@@ -4,8 +4,8 @@ export const Navegador = () => {
   return (
     <NavStyled>
       <ul>
-        <li className="active">Perfil</li>
-        <li className="projetos">Projetos & Habilidades</li>
+        <li className="perfil">Perfil</li>
+        <li className="projetos active">Projetos & Habilidades</li>
       </ul>
     </NavStyled>
   );

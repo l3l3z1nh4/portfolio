@@ -1,6 +1,7 @@
 import { createGlobalStyle } from 'styled-components'
 import styled from 'styled-components'
 import { cores } from './cores'
+import { breakpoint } from './breakpoints'
 
 export const GlobalCss = createGlobalStyle`
 * {
@@ -26,8 +27,13 @@ export const GlobalCss = createGlobalStyle`
 
 .conteudo{
   height: 50vh;
+  width: 100%;
   border-left: 2px solid ${cores.vermelho};
   border-right: 2px solid ${cores.vermelho};
+
+  ${breakpoint.mobile} {
+    height: 55vh;
+  }
 }
 `
 export const Container = styled.div`

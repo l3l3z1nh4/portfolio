@@ -21,6 +21,7 @@ export const NavStyled = styled.nav`
       box-sizing: border-box;
       font-size: 1.2em;
       color: ${cores.vermelho};
+      font-weight: 500;
 
       &.active {
         background-color: ${cores.vermelhoGlass};
