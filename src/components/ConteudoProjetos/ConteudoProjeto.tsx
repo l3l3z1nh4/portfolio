@@ -321,37 +321,21 @@ export function Projetos() {
       <ContainerSkills>
         <h1>Skills</h1>
         <ul className="skills-grid">
-          <div>
-            <li className="br">HTML</li>
-            <li>CSS</li>
-          </div>
-          <div>
-            <li>JavaScript</li>
-          </div>
-          <div>
-            <li className="br">react</li>
-            <li>vue.js</li>
-          </div>
-          <div>
-            <li>typescript</li>
-          </div>
-          <div>
-            <li className="br">git</li>
-            <li className="br">Sass</li>
-            <li>less</li>
-          </div>
-          <div>
-            <li>bootstrap</li>
-          </div>
-          <div>
-            <li className="br">cypress</li>
-            <li className="br">gulp</li>
-            <li>grunt</li>
-          </div>
-          <div>
-            <li className="br">figma</li>
-            <li>photoshop</li>
-          </div>
+          <li className="br">HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li className="br">react</li>
+          <li>vue.js</li>
+          <li>typescript</li>
+          <li className="br">git</li>
+          <li className="br">Sass</li>
+          <li>less</li>
+          <li>bootstrap</li>
+          <li className="br">cypress</li>
+          <li className="br">gulp</li>
+          <li>grunt</li>
+          <li className="br">figma</li>
+          <li>photoshop</li>
         </ul>
       </ContainerSkills>
     </ProjetosStyled>

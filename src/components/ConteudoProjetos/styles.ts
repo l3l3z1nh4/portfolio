@@ -24,7 +24,7 @@ export const ProjetosStyled = styled.div`
 `
 
 export const ContainerProjetos = styled.div`
-  width: 70%;
+  width: 75%;
   border-right: 2px solid ${cores.vermelho};
   height: 100%;
 
@@ -100,42 +100,60 @@ export const ContainerProjetos = styled.div`
 `
 
 export const ContainerSkills = styled.div`
-  width: 30%;
+  width: 25%;
   height: 100%;
 
   ${breakpoint.mobile} {
     width: 100%;
 
-
     h1 {
       padding-top: 4px;
-      padding-bottom: 6px;
+      padding-bottom: 16px;
     }
   }
 
-  ul {
-    width: 100%;
+  ul.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
 
-    div {
+
+    ${breakpoint.desktop} {
+      height: 100%;
+      width: 100%;
+      flex-direction: column;
+    }
+
+    ${breakpoint.mobile} {
+      height: 68%;
+      width: 111.2%;
+    }
+
+    > li {
+      
       display: flex;
       justify-content: center;
       align-items: center;
       border-bottom: 2px solid ${cores.vermelho};
-      width: 100%;
-      .br {
-        border-right: 2px solid ${cores.vermelho};
-      }
-    }
+      font-size: 0.8em;
+      border-right: 2px solid ${cores.vermelho};
 
-    li {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 14px;
-      width: 100%;
-      height: 39px;
+      ${breakpoint.desktop} {
+        width: 100%;
+        height: 5.94%;
+        &:nth-of-type(1n) {
+          border-right: none;
+        }
+        font-size: 0.8em;
+
+      }
+
       ${breakpoint.mobile} {
-        height: 25px;
+        width: 18%;
+        border-right: 2px solid ${cores.vermelho};
+
+        &:nth-of-type(5n) {
+          border-right: none;
+        }
       }
     }
   }
