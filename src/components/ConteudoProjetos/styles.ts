@@ -7,6 +7,7 @@ export const ProjetosStyled = styled.div`
   justify-content: space-between;
   align-items: center;
   color: ${cores.vermelho};
+  overflow: hidden;
 
   h1 {
     display: flex;

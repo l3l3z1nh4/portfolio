@@ -10,7 +10,7 @@ export const NavStyled = styled.nav`
     align-items: center;
     height: 3em;
 
-    li {
+    a {
       display: flex;
       justify-content: center;
       align-items: center;

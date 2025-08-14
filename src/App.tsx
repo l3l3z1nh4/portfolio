@@ -1,14 +1,14 @@
 import { Container } from './styles/global'
-import { CardProjeto } from './components/CardProjeto/CardProjeto'
-
+import Rotas from './routes'
+import { BrowserRouter } from 'react-router-dom'
 
 function App() {
   return (
-    <>
+    <BrowserRouter>
       <Container>
-        <CardProjeto />
+        <Rotas />
       </Container>
-    </>
+    </BrowserRouter>
   )
 }
 
