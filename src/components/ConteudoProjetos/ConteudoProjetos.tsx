@@ -1,6 +1,6 @@
 import { ContainerProjetos, ContainerSkills, ProjetosStyled } from './styles'
 
-export function Projetos() {
+export function ConteudoProjetos() {
   return (
     <ProjetosStyled className="conteudo">
       <ContainerProjetos>
@@ -342,4 +342,4 @@ export function Projetos() {
   )
 }
 
-export default Projetos
+export default ConteudoProjetos;
