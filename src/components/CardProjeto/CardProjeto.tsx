@@ -8,11 +8,15 @@ import {
   TecLinks,
 } from './styles'
 
-export function CardProjeto() {
+interface CardProjetoProps {
+  handleClose: () => void
+}
+
+export function CardProjeto({ handleClose }: CardProjetoProps) {
   return (
     <>
-      <HeaderProjeto />
-      <ConteudoCard className="conteudo">
+      <HeaderProjeto handleClose={handleClose} />
+      <ConteudoCard className='conteudo' >
         <Descricao>
           <h2>descrição</h2>
           <p>

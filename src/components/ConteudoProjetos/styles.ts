@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import { cores } from '../../styles/cores'
 import { breakpoint } from '../../styles/breakpoints'
 
+
 export const ProjetosStyled = styled.div`
   display: flex;
   justify-content: space-between;
@@ -44,7 +45,8 @@ export const ContainerProjetos = styled.div`
       padding: 0.3em 0.5em;
       border-bottom: 2px solid ${cores.vermelho};
       height: 8.9%;
-      cursor: pointer;
+      cursor: default;
+
 
       ${breakpoint.mobile} {
         height: 8.5%;
@@ -91,6 +93,12 @@ export const ContainerProjetos = styled.div`
         justify-content: space-between;
         align-items: center;
         gap: 0.8em;
+        
+        button{
+          border: none;
+          background: none;
+          cursor: pointer;
+        }
 
         img {
           height: 1em;
@@ -117,7 +125,6 @@ export const ContainerSkills = styled.div`
     display: flex;
     flex-wrap: wrap;
 
-
     ${breakpoint.desktop} {
       height: 100%;
       width: 100%;
@@ -130,7 +137,6 @@ export const ContainerSkills = styled.div`
     }
 
     > li {
-      
       display: flex;
       justify-content: center;
       align-items: center;
@@ -145,7 +151,6 @@ export const ContainerSkills = styled.div`
           border-right: none;
         }
         font-size: 0.8em;
-
       }
 
       ${breakpoint.mobile} {

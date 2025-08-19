@@ -2,11 +2,30 @@ import styled from 'styled-components'
 import { cores } from '../../styles/cores'
 import { breakpoint } from '../../styles/breakpoints'
 
+export const Overlay = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: ${cores.branco};
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 1000;
+`
+
 export const ConteudoCard = styled.div`
   display: flex;
   justify-content: space-between;
   flex-direction: column;
   color: ${cores.vermelho};
+  height: 56.5vh;
+
+  ${breakpoint.mobile} {
+    height: 61.2vh;
+  }
 `
 
 export const Descricao = styled.div`
@@ -15,6 +34,7 @@ export const Descricao = styled.div`
   align-items: center;
   height: 35%;
   width: 100%;
+  border-bottom: 2px solid ${cores.vermelho};
 
   ${breakpoint.mobile} {
     flex-direction: column;
@@ -23,7 +43,7 @@ export const Descricao = styled.div`
 
   h2 {
     width: 100%;
-    border-bottom: 2px solid ${cores.vermelho};
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -32,6 +52,7 @@ export const Descricao = styled.div`
     border-right: 2px solid ${cores.vermelho};
 
     ${breakpoint.mobile} {
+      border-bottom: 2px solid ${cores.vermelho};
       width: 100%;
       border-right: none;
       height: 30%;
