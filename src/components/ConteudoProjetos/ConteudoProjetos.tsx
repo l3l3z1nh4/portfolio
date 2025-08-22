@@ -44,13 +44,13 @@ export function ConteudoProjetos() {
                 </div>
                 <div className="links">
                   <a className="codigo" target="blank" href={projeto.linkRepositorio}>
-                    <img src="/public/assets/codigo_vermelho.png" alt="repositório" />
+                    <img src="assets/codigo_vermelho.png" alt="repositório" />
                   </a>
                   <a className="link" target="blank" href={projeto.linkOnline}>
-                    <img src="/public/assets/link_vermelho.png" alt="link do projeto online" />
+                    <img src="assets/link_vermelho.png" alt="link do projeto online" />
                   </a>
                   <button className="mais" onClick={() => handleOpenCard(projeto)}>
-                    <img src="/public/assets/mais_vermelho.png" alt="ver mais" />
+                    <img src="assets/mais_vermelho.png" alt="ver mais" />
                   </button>
                 </div>
               </li>
