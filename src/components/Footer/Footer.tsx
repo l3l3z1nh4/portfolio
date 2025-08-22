@@ -19,13 +19,13 @@ export function Footer() {
         <SocialContent> 
           <Social>
             <a target="blank" href="https://github.com/l3l3z1nh4">
-              <img src="assets/git_hub_icon.png" alt="github" />
+              <img src="/assets/git_hub_icon.png" alt="github" />
             </a>
             <a
               target="blank"
               href="https://www.linkedin.com/in/let%C3%ADcia-pessotti/"
             >
-              <img src="assets/linkedin_icon.png" alt="linkedin" />
+              <img src="/assets/linkedin_icon.png" alt="linkedin" />
             </a>
           </Social>
         </SocialContent>
