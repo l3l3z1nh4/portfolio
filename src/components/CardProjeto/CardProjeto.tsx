@@ -8,42 +8,48 @@ import {
   TecLinks,
 } from './styles'
 
-interface CardProjetoProps {
+interface Props {
+  projeto: {
+    nome: string
+    descricaoCompleta: string
+    funcionalidades: string[]
+    tecnologias: string[]
+    linkOnline: string
+    linkRepositorio: string
+  }
   handleClose: () => void
 }
 
-export function CardProjeto({ handleClose }: CardProjetoProps) {
+export function CardProjeto({ projeto, handleClose }: Props) {
+  if (!projeto) {
+    return null 
+  }
   return (
     <>
-      <HeaderProjeto handleClose={handleClose} />
-      <ConteudoCard className='conteudo' >
+      <HeaderProjeto titulo={projeto.nome} handleClose={handleClose} />
+      <ConteudoCard className="conteudo">
         <Descricao>
           <h2>descrição</h2>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam
-            debitis nam veritatis quidem? Aliquid deleniti modi odit consectetur
-            quos fugit temporibus. Quidem a beatae tempora soluta illum animi
-            nesciunt assumenda!
-          </p>
+          <p>{projeto.descricaoCompleta}</p>
         </Descricao>
         <Funconalidades>
           <h2>funcionalidades</h2>
           <ul>
-            <li>Funcionalidade 1</li>
-            <li>Funcionalidade 2</li>
-            <li>Funcionalidade 3</li>
+            {projeto.funcionalidades.map((item, index) => (
+              <li key={index}>{item}</li>
+            ))}
           </ul>
         </Funconalidades>
         <TecLinks>
           <h2>tecnologias</h2>
           <ul>
-            <li>Tecnologia 1</li>
-            <li>Tecnologia 2</li>
-            <li>Tecnologia 3</li>
+            {projeto.tecnologias.map((item, index) => (
+              <li key={index}>{item}</li>
+            ))}
           </ul>
           <Links>
-            <a href="">veja online</a>
-            <a href="">repositório</a>
+            <a href={projeto.linkOnline} target="_blank" rel="noopener noreferrer">veja online</a>
+            <a href={projeto.linkRepositorio} target="_blank" rel="noopener noreferrer">repositório</a>
           </Links>
         </TecLinks>
       </ConteudoCard>

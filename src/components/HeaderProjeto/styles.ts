@@ -16,10 +16,11 @@ export const TituloContainer = styled.div`
 `
 export const Titulo = styled.h1`
   font-weight: 700;
-  font-size: 2em;
+  font-size: 50px;
+  margin-left: 4em;
   ${breakpoint.mobile} {
-    font-size: 1.8em;
-    margin-left: 2em;
+    font-size: 8em;
+    margin-left: 4em;
   }
 `
 

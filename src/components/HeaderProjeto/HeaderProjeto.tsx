@@ -1,15 +1,16 @@
 import { CloseBtn, Header, Titulo, TituloContainer } from './styles'
 
 interface CardProjetoProps {
+  titulo: string
   handleClose: () => void
 }
 
-function HeaderProjeto({ handleClose }: CardProjetoProps) {
+function HeaderProjeto({ titulo, handleClose }: CardProjetoProps) {
   return (
     <>
       <Header>
         <TituloContainer>
-          <Titulo>titulo do projeto</Titulo>
+          <Titulo>{titulo}</Titulo>
         </TituloContainer>
         <CloseBtn onClick={handleClose}>x</CloseBtn>
       </Header>

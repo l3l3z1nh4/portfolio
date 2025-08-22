@@ -42,12 +42,10 @@ export const Descricao = styled.div`
   }
 
   h2 {
-    width: 100%;
-    
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50em;
+    width: 583px;
     height: 100%;
     border-right: 2px solid ${cores.vermelho};
 
@@ -66,6 +64,11 @@ export const Descricao = styled.div`
     align-items: center;
     justify-content: center;
     height: 100%;
+    width: 100%;
+    text-align: justify;
+    ${breakpoint.mobile} {
+      font-size: 0.7em;
+    }
   }
 `
 export const Funconalidades = styled.div`
@@ -111,12 +114,17 @@ export const Funconalidades = styled.div`
       justify-content: center;
       width: 100%;
       height: 100%;
-      padding: 0.5em;
+      padding: 0 0.5em ;
       border-bottom: 2px solid ${cores.vermelho};
 
-      &:nth-of-type(3n) {
+      &:nth-of-type(3n),
+      &:nth-of-type(4n) {
         border-bottom: none;
       }
+
+       &:nth-of-type(4n) {
+        border-top: 2px solid ${cores.vermelho};
+      } 
 
       ${breakpoint.mobile} {
         font-size: 0.8em;
@@ -162,12 +170,18 @@ export const TecLinks = styled.div`
       justify-content: center;
       width: 100%;
       height: 100%;
-      padding: 0.5em;
+      padding: 0 0.5em;
       border-bottom: 2px solid ${cores.vermelho};
 
-      &:nth-of-type(3n) {
+      &:nth-of-type(3n),
+      &:nth-of-type(4n) {
         border-bottom: none;
       }
+
+       &:nth-of-type(4n) {
+        border-top: 2px solid ${cores.vermelho};
+      } 
+
 
       ${breakpoint.mobile} {
         font-size: 0.8em;
