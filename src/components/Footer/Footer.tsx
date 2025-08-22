@@ -1,5 +1,3 @@
-// seu-componente/Footer.tsx
-
 import {
   FooterStyled,
   Email,
@@ -21,13 +19,13 @@ export function Footer() {
         <SocialContent> 
           <Social>
             <a target="blank" href="https://github.com/l3l3z1nh4">
-              <img src="src/assets/git_hub_icon.png" alt="github" />
+              <img src="public/assets/git_hub_icon.png" alt="github" />
             </a>
             <a
               target="blank"
               href="https://www.linkedin.com/in/let%C3%ADcia-pessotti/"
             >
-              <img src="src\assets\linkedin_icon.png" alt="linkedin" />
+              <img src="public/assets/linkedin_icon.png" alt="linkedin" />
             </a>
           </Social>
         </SocialContent>
