@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import { cores } from '../../styles/cores'
+import { breakpoint } from '../../styles/breakpoints'
 
 export const FooterStyled = styled.footer`
   display: flex;
@@ -34,6 +35,11 @@ export const Email = styled.div`
   gap: 0.5em;
   font-weight: 500;
   font-size: 0.8em;
+
+
+  ${breakpoint.mobile} {
+    font-size: 0.58em;
+  }
 `
 export const SocialContent = styled.div`
   background-color: ${cores.vermelho}; 
@@ -43,6 +49,10 @@ export const SocialContent = styled.div`
   border-radius: 0 0 47px 0; /* Borda direita */
   padding: 0 2em; 
   flex-shrink: 0; 
+
+  ${breakpoint.mobile}{
+    padding: 0 1.3em;
+  }
 `
 
 export const Social = styled.div`
@@ -53,5 +63,9 @@ export const Social = styled.div`
   img {
     max-width: 2em;
     height: auto;
+
+    ${breakpoint.mobile} {
+      max-width: 1.5em;
+    }
   }
 `

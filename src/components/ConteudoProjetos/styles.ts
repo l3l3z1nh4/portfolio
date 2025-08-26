@@ -2,7 +2,6 @@ import styled from 'styled-components'
 import { cores } from '../../styles/cores'
 import { breakpoint } from '../../styles/breakpoints'
 
-
 export const ProjetosStyled = styled.div`
   display: flex;
   justify-content: space-between;
@@ -18,10 +17,16 @@ export const ProjetosStyled = styled.div`
     height: 11%;
     border-bottom: 2px solid ${cores.vermelho};
     font-size: 1.3em;
+
+    ${breakpoint.mobile} {
+      font-size: 1.1em;
+    }
   }
 
   ${breakpoint.mobile} {
     flex-direction: column;
+    height: 100%;
+    max-height: 55vh;
   }
 `
 
@@ -33,6 +38,7 @@ export const ContainerProjetos = styled.div`
   ${breakpoint.mobile} {
     width: 100%;
     border-right: none;
+    height: 100%;
   }
 
   ul {
@@ -47,9 +53,9 @@ export const ContainerProjetos = styled.div`
       height: 8.9%;
       cursor: default;
 
-
       ${breakpoint.mobile} {
         height: 8.5%;
+        font-size: 0.6em;
       }
 
       &:hover {
@@ -83,7 +89,7 @@ export const ContainerProjetos = styled.div`
           text-transform: none;
           margin-top: -3px;
           ${breakpoint.mobile} {
-            font-size: 0.85em;
+            font-size: 0.95em;
           }
         }
       }
@@ -93,8 +99,8 @@ export const ContainerProjetos = styled.div`
         justify-content: space-between;
         align-items: center;
         gap: 0.8em;
-        
-        button{
+
+        button {
           border: none;
           background: none;
           cursor: pointer;
@@ -114,10 +120,15 @@ export const ContainerSkills = styled.div`
 
   ${breakpoint.mobile} {
     width: 100%;
+    height: 30%;
 
     h1 {
       padding-top: 4px;
       padding-bottom: 16px;
+
+      ${breakpoint.mobile} {
+        padding-bottom: 14px;
+      }
     }
   }
 
@@ -132,7 +143,7 @@ export const ContainerSkills = styled.div`
     }
 
     ${breakpoint.mobile} {
-      height: 68%;
+      height: 82%;
       width: 111.2%;
     }
 
@@ -156,6 +167,7 @@ export const ContainerSkills = styled.div`
       ${breakpoint.mobile} {
         width: 18%;
         border-right: 2px solid ${cores.vermelho};
+        font-size: 0.59em;
 
         &:nth-of-type(5n) {
           border-right: none;

@@ -33,8 +33,9 @@ export const NavStyled = styled.nav`
         cursor: pointer;
       }
       ${breakpoint.mobile} {
+        font-size: 1em;
         &:first-child {
-          width: 70%;
+          width: 60%;
         }
       }
     }

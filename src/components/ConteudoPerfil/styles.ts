@@ -53,6 +53,7 @@ export const CardPerfil = styled.div`
       align-items: center;
       justify-content: center;
       width: 70%;
+      font-size: 1em;
     }
   }
 
@@ -66,7 +67,7 @@ export const CardPerfil = styled.div`
 
     ${breakpoint.mobile} {
      padding: 0;
-     font-size: 1.3em;
+     font-size: 1.2em;
      height: 60%;
     }
   }
@@ -87,7 +88,8 @@ export const CardDescricao = styled.div`
 
   ${breakpoint.mobile} {
     p {
-      font-size: 1em;
+      font-size: 0.98em;
+      padding: 1em;
     }
   }
 `
