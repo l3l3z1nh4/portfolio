@@ -1,6 +1,6 @@
 import { Footer } from '../Footer/Footer'
 import HeaderProjeto from '../HeaderProjeto/HeaderProjeto'
-import {
+import {Card,
   ConteudoCard,
   Descricao,
   Funconalidades,
@@ -25,7 +25,7 @@ export function CardProjeto({ projeto, handleClose }: Props) {
     return null 
   }
   return (
-    <>
+    <Card className='container'>
       <HeaderProjeto titulo={projeto.nome} handleClose={handleClose} />
       <ConteudoCard className="conteudo">
         <Descricao>
@@ -54,6 +54,6 @@ export function CardProjeto({ projeto, handleClose }: Props) {
         </TecLinks>
       </ConteudoCard>
       <Footer />
-    </>
+    </Card>
   )
 }

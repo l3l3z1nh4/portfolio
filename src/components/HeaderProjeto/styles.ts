@@ -7,6 +7,7 @@ export const Header = styled.header`
   justify-content: space-between;
   align-items: center;
   width: 100%;
+
 `
 export const TituloContainer = styled.div`
   display: flex;

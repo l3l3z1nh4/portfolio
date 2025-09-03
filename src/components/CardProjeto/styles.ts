@@ -14,6 +14,16 @@ export const Overlay = styled.div`
   align-items: center;
   flex-direction: column;
   z-index: 1000;
+  overflow: hidden;
+  ${breakpoint.smartphone} {
+    max-width: 100%;
+  }
+`
+
+export const Card = styled.div`
+  ${breakpoint.smartphone} {
+    overflow: auto;
+  }
 `
 
 export const ConteudoCard = styled.div`
@@ -25,6 +35,9 @@ export const ConteudoCard = styled.div`
 
   ${breakpoint.mobile} {
     height: 61.2vh;
+  }
+  ${breakpoint.smartphone} {
+    height: 60.5vh;
   }
 `
 
@@ -114,7 +127,7 @@ export const Funconalidades = styled.div`
       justify-content: center;
       width: 100%;
       height: 100%;
-      padding: 0 0.5em ;
+      padding: 0 0.5em;
       border-bottom: 2px solid ${cores.vermelho};
 
       &:nth-of-type(3n),
@@ -122,9 +135,9 @@ export const Funconalidades = styled.div`
         border-bottom: none;
       }
 
-       &:nth-of-type(4n) {
+      &:nth-of-type(4n) {
         border-top: 2px solid ${cores.vermelho};
-      } 
+      }
 
       ${breakpoint.mobile} {
         font-size: 0.8em;
@@ -139,6 +152,11 @@ export const TecLinks = styled.div`
   height: 35%;
   width: 100%;
 
+  ${breakpoint.smartphone} {
+    flex-direction: column; // [NOVO] empilha
+    font-size: 0.8em; // [NOVO]
+    max-width: 100%; // [NOVO]
+  }
   h2 {
     display: flex;
     justify-content: center;
@@ -149,7 +167,16 @@ export const TecLinks = styled.div`
 
     ${breakpoint.mobile} {
       width: 13.6em;
-      font-size: 120%;
+      font-size: 0.8em;
+    }
+
+    ${breakpoint.smartphone} {
+      width: 100%;
+      border-right: none;
+      border-bottom: 2px solid ${cores.vermelho};
+      height: 30%;
+      padding: 0.2em 0;
+      font-size: 2em;
     }
   }
   ul {
@@ -162,6 +189,10 @@ export const TecLinks = styled.div`
 
     ${breakpoint.mobile} {
       width: 50%;
+    }
+
+    ${breakpoint.smartphone} {
+      width: 100%;
     }
 
     li {
@@ -178,13 +209,26 @@ export const TecLinks = styled.div`
         border-bottom: none;
       }
 
-       &:nth-of-type(4n) {
+      &:nth-of-type(4n) {
         border-top: 2px solid ${cores.vermelho};
-      } 
-
+      }
 
       ${breakpoint.mobile} {
         font-size: 0.8em;
+      }
+
+      ${breakpoint.smartphone} {
+        font-size: 0.8em;
+        width: 100%;
+
+        &:nth-of-type(3n),
+        &:nth-of-type(4n) {
+          border-bottom: 2px solid ${cores.vermelho};
+        }
+
+        &:nth-of-type(4n) {
+          border-top: none;
+        }
       }
     }
   }
@@ -204,6 +248,13 @@ export const Links = styled.div`
     width: 40%;
   }
 
+  ${breakpoint.smartphone} {
+    width: 100%;
+    border-left: none;
+    flex-direction: row;
+    height: 60%;
+  }
+
   a {
     display: flex;
     justify-content: center;
@@ -212,6 +263,7 @@ export const Links = styled.div`
     width: 102%;
     border-bottom: 2px solid ${cores.vermelho};
     color: ${cores.vermelho};
+
     &:last-child {
       border-bottom: none;
     }
@@ -225,6 +277,12 @@ export const Links = styled.div`
     }
     ${breakpoint.mobile} {
       width: 100%;
+    }
+    ${breakpoint.smartphone} {
+      border-bottom: none;
+      &:last-child {
+        border-left: 2px solid ${cores.vermelho};
+      }
     }
   }
 `
