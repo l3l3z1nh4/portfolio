@@ -37,7 +37,7 @@ export const ConteudoCard = styled.div`
     height: 61.2vh;
   }
   ${breakpoint.smartphone} {
-    height: 60.5vh;
+    height: 61.2vh;
   }
 `
 
