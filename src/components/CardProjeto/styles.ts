@@ -23,6 +23,11 @@ export const Overlay = styled.div`
 export const Card = styled.div`
   ${breakpoint.smartphone} {
     overflow: auto;
+    display: flex;
+    flex-direction: column ;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
   }
 `
 
@@ -81,6 +86,9 @@ export const Descricao = styled.div`
     text-align: justify;
     ${breakpoint.mobile} {
       font-size: 0.7em;
+    }
+    ${breakpoint.smartphone} {
+      font-size: 0.6em;
     }
   }
 `
